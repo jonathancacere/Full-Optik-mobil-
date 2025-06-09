@@ -12,9 +12,9 @@ export class ProductosPage implements OnInit {
 
     productos = [
     {
-      nombre: 'Manzana',
-      precio: 2.5,
-      imagen: '/assets/img/productos/manzanas.jpg'
+      nombre: 'Lentes baron',
+      precio: 34.990,
+      imagen: "/assents/img/productos/lentes sol"
     },
     {
       nombre: 'Banana',

@@ -49,8 +49,8 @@ ion-app, ion-content {
  }
 
  ion-header {
-    --background: transparent; /* Fondo transparente */
-    --ion-toolbar-background: transparent; /* Fondo transparente para la toolbar */
+    --background: black; /* Fondo naranja oscuro */
+    --ion-toolbar-background: black; /* Fondo naranja oscuro para la toolbar */
     --ion-toolbar-border-color: transparent; /* Elimina el borde */
   }
 
@@ -58,14 +58,14 @@ ion-app, ion-content {
   ion-toolbar,
   ion-buttons,
   app-company-name {
-    color: #D35400; /* Ajusta el color del texto o íconos a darkblue */
+    color: black; /* Texto en negro */
   }
 
 
   ion-header,
  ion-toolbar {
   --ion-toolbar-border-color: transparent; /* Quita el borde */
-  --background: transparent;               /* Hace transparente la barra */ 
+  --background: transparent; /* Fondo transparente */
  }
  
   .header-md{
@@ -75,6 +75,6 @@ ion-app, ion-content {
 
   .title_tab h2 {
     text-align: center;
-    color: #D35400;
+    color: black;
   }
   

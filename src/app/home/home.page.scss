@@ -1,5 +1,6 @@
 #container {
   text-align: center;
+  color: black;
 
   position: absolute;
   left: 0;
@@ -23,7 +24,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: rgb(0, 0, 0);
+  color: black;
 
   margin: 0;
 }
@@ -56,7 +57,7 @@
 }
 
 ion-card {
-  background-color: rgb(255, 255, 255); /* Fondo semitransparente */
+  background-color: black(255, 255, 255); /* Fondo semitransparente */
   backdrop-filter: blur(5px); /* Opcional: agrega un efecto de desenfoque detrás */
   box-shadow: none;
   border-radius: 5%;
@@ -66,7 +67,7 @@ ion-card {
 
 ion-card ion-item {
   --background: transparent; /* Fondo transparente */
-  color: #D35400; /* Color de texto en naranja oscuro */
+  color: black; /* Color de texto en naranja oscuro */
 }
 
 ion-card-header {
@@ -78,7 +79,7 @@ ion-card-header {
 
 .ofertas-info {
   text-align: center;
-  color: darkgreen;
+  color: black;
   animation: zoomIn 3s ease-in-out infinite alternate;
   margin-top: 15%;
 }

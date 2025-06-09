@@ -46,7 +46,7 @@ ion-content {
   
   ion-card label {
     background-color: transparent; /* Fondo transparente para navegadores que no usan variables CSS */
-    color: #D35400; /* Color de texto en naranja oscuro */
+    color: black; /* Color de texto en naranja oscuro */
   }
 
 
@@ -57,7 +57,7 @@ ion-content {
   
   ion-card ion-button.login-button {
     --background: #D35400; /* Fondo en naranja oscuro */
-    color: white; /* Texto en blanco para buen contraste */
+    color: #000; /* Texto en blanco para buen contraste */
   }
 
   .register-button {
