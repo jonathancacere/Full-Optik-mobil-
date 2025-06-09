@@ -17,4 +17,8 @@ export class AppComponent {
     this.router.navigate(['/login']);
   }
 
+  navegarProductos() {
+    this.menu.close('mainMenu'); // Cierra el menú
+    this.router.navigate(['/tabs/Lente Adulto']); // Navega a la primera sección de productos
+  }
 }

@@ -1,6 +1,6 @@
 ion-content {
     --background: none; /* Elimina cualquier fondo global */
-    background-image: url('../../../assets/img/fondo.jpg');  
+    background-image: url('../../../assets/img/Fondo.jpg');  
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -30,7 +30,7 @@ ion-content {
 
   ion-card ion-input {
     --background: transparent; /* Fondo transparente */
-    color: darkgreen; /* Color de texto en naranja oscuro */
+    color: rgb(0, 0, 0); /* Color de texto en naranja oscuro */
   }
   
   ion-card input {
@@ -96,7 +96,7 @@ ion-content {
 
   .logo {
     width: 100%; /* Ajusta el tamaño según tus necesidades */
-    animation: zoomInOut 5s  ease-in-out; /* Animación infinita */
+    animation: zoomInOut 5s  ease-in-out infinite; /* Animación infinita */
     opacity: 0;
     animation-fill-mode: forwards; /* Mantiene el estado final */
   }

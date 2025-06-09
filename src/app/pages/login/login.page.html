@@ -13,18 +13,15 @@
       <ion-card-content>
 
 
-        <ion-item class="input-item">
-          <ion-label position="floating" color="primary">Email</ion-label>
-          <ion-input  [(ngModel)]="email" type="email"></ion-input>
-        </ion-item>
-
-        <ion-item class="input-item">
-          <ion-label position="floating" color="primary">Password</ion-label>
-          <ion-input [(ngModel)]="password" type="password"></ion-input>
-        </ion-item>
+       <ion-item>
+            <ion-input [(ngModel)]="email" type="email" required label="Correo electrónico" labelPlacement="floating" placeholder="Escriba su correo electrónico"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="password" type="password" required label="contraseña" labelPlacement="floating" placeholder="Escriba su contraseña"></ion-input>
+          </ion-item>
 
         <!-- Boton Login-->
-        <ion-button expand="block"  (click)="login()" class="login-button" >Login</ion-button>
+        <ion-button expand="block"  (click)="login()" class="login-button" >Inicio de sesion</ion-button>
         
         <ion-button expand="block" (click)="registro()"   fill="clear"   class="register-button">Registrarse</ion-button>
 

@@ -13,10 +13,11 @@ export class RegistroPage implements OnInit {
 
   nombre: any='';
   apellido: any='';
-  selectedOption: any=''; // nivel de estudios
   selectedDate: any='';
   usuario: any='';
   password: any='';
+  direccion: any='';
+  pais: any='';
 
  constructor(private alertController: AlertController, 
              private menu: MenuController,

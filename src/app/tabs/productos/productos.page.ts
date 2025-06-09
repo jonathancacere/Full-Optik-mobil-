@@ -13,40 +13,40 @@ export class ProductosPage implements OnInit {
     productos = [
     {
       nombre: 'Lentes baron',
-      precio: 34.990,
-      imagen: "/assents/img/productos/lentes sol"
+      precio: 34.000,
+      imagen: '/assets/img/productos/baron2.PNG'
     },
     {
-      nombre: 'Banana',
-      precio: 1.2,
-      imagen: '/assets/img/productos/bananas.jpeg'
+      nombre: 'Lentes aviador',
+      precio: 34.000,
+      imagen: '/assets/img/productos/lentebaron3.jpg'
     },
     {
-      nombre: 'Naranja',
-      precio: 3.0,
-      imagen: '/assets/img/productos/naranjas.jpg'
+      nombre: 'Lentes infantil',
+      precio: 30.000,
+      imagen: '/assets/img/productos/infantil4.PNG'
     },
     {
-      nombre: 'Piña',
-      precio: 4.5,
-      imagen: '/assets/img/productos/piña.jpg'
+      nombre: 'Lentes sol dama',
+      precio: 15.000,
+      imagen: '/assets/img/productos/sol2.PNG'
     },
     {
-      nombre: 'Fresas',
-      precio: 5.0,
-      imagen: '/assets/img/productos/fresas.jpg'
+      nombre: 'Lentes infantil',
+      precio: 32.000,
+      imagen: '/assets/img/productos/infantil3.PNG'
     },
     {
-      nombre: 'Kiwi',
-      precio: 5.0,
-      imagen: '/assets/img/productos/kiwi.jpg'
+      nombre: 'Sobre lentes',
+      precio: 30.000,
+      imagen: '/assets/img/productos/sobrelentes.PNG'
     },
     {
-      nombre: 'Maracuya',
-      precio: 5.0,
-      imagen: '/assets/img/productos/maracuya.jpg'
+      nombre: 'Lentes dama',
+      precio: 25.000,
+      imagen: '/assets/img/productos/lentes1.jpg'
     }
-    // Agrega más frutas si es necesario
+    
   ];
 
   constructor(private menu: MenuController) { }
