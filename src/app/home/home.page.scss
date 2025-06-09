@@ -10,7 +10,7 @@
 }
 
 :deep(ion-content) {
-  --background: url('../assets/img/Fondo.jpg') no-repeat center center / cover;
+  --background: url('/assets/img/Fondo.jpg') no-repeat center center / cover;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -42,7 +42,21 @@
 }
 
 .user-info h2 {
-  font-size: 1em;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.user-info h2 strong {
+  color: #000000;
+}
+
+.user-info span {
+  color: #000000;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
 }
 
 .user-avatar {
@@ -68,6 +82,14 @@ ion-card {
 ion-card ion-item {
   --background: transparent; /* Fondo transparente */
   color: black; /* Color de texto en naranja oscuro */
+}
+
+:deep(ion-menu ion-item) {
+  color: black;
+}
+
+:deep(ion-menu ion-label) {
+  color: black;
 }
 
 ion-card-header {

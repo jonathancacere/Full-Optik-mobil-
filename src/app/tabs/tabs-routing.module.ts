@@ -9,17 +9,21 @@ const routes: Routes = [
     component: TabsPage,
     children:[
        {
-          path: 'productos',
+          path: 'Lente Adulto',
           loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
         },
         {
-          path: 'recetas',
-          loadChildren: () => import('./recetas/recetas.module').then( m => m.RecetasPageModule)
+          path: 'Lente infantil',
+          loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
         },
         {
-          path: 'galeria',
-          loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
+          path: 'Sobre Lentes',
+          loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
         }, 
+        {
+          path: 'Lentes de sol',
+          loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
+        },
         {
           path: '',
           redirectTo: '/tabs/productos',

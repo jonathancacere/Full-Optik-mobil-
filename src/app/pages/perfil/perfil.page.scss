@@ -1,0 +1,50 @@
+ion-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ion-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+ion-card-subtitle {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+ion-label {
+  font-size: 16px;
+  color: #000000;
+}
+
+ion-label h3 {//letras calle//
+  margin: 0;
+  color: #ffffff;
+}
+
+ion-label p {//letras pais//
+  margin: 4px 0 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+ion-button {
+  margin-top: 16px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --border-radius: 8px;
+}
+
+ion-icon {
+  color: #5a4daf;
+  font-size: 24px;
+  margin-right: 8px;
+}

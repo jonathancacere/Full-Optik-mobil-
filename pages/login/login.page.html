@@ -1,0 +1,34 @@
+ 
+<ion-content [fullscreen]="true"  > 
+  <div class="login-container">
+
+     <!-- Imagen del logo -->
+     <div class="logo-container">
+      <img src="../../../assets/img/fondo-Fulloptik.png" alt="Logo" class="logo">
+    </div>
+
+    <ion-card class="login-card">
+       
+
+      <ion-card-content>
+
+
+        <ion-item>
+          <ion-input [(ngModel)]="correo" type="Correo" required label="Correo" labelPlacement="floating" placeholder="Escriba su correo"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="contraseña" type="Contraseña" required label="Contraseña" labelPlacement="floating" placeholder="Escriba su contraseña"></ion-input>
+        </ion-item>
+
+        <!-- Boton Login-->
+        <ion-button expand="block"  (click)="Inisio de sesion()" class="login-button" >Inicio de sesion</ion-button>
+        
+        <ion-button expand="block" (click)="registro()"   fill="clear"   class="register-button">Registrarse</ion-button>
+
+        <ion-text class="forgot-password" color="medium">
+          <a href="#">Olvidaste tu contraseña</a>
+        </ion-text>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

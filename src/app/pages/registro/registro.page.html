@@ -36,8 +36,8 @@
       </ion-item>
 
       <ion-item>
-        <ion-label position="floating">usuario</ion-label>
-        <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="email" [(ngModel)]="usuario"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -45,13 +45,19 @@
         <ion-input type="password" [(ngModel)]="password"></ion-input>
       </ion-item>
 
+      <ion-item>
+        <ion-label position="floating">Dirección</ion-label>
+        <ion-input type="text" [(ngModel)]="direccion"></ion-input>
+      </ion-item>
 
       <ion-item>
-        <ion-label>Nivel de Educacion</ion-label>
-        <ion-select [(ngModel)]="selectedOption">
-          <ion-select-option value="option1">Universitario</ion-select-option>
-          <ion-select-option value="option2">Magister</ion-select-option>
-          <ion-select-option value="option3">Doctorado</ion-select-option>
+        <ion-label position="floating">País</ion-label>
+        <ion-select [(ngModel)]="pais" interface="action-sheet">
+          <ion-select-option value="Colombia">Colombia</ion-select-option>
+          <ion-select-option value="Chile">Chile</ion-select-option>
+          <ion-select-option value="Perú">Perú</ion-select-option>
+          <ion-select-option value="Argentina">Argentina</ion-select-option>
+          <ion-select-option value="Ecuador">Ecuador</ion-select-option>
         </ion-select>
       </ion-item>
 

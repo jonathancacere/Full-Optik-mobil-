@@ -20,12 +20,12 @@ ion-card {
 
   ion-card ion-input {
     --background: transparent; /* Fondo transparente */
-    color: rgb(0, 0, 0); /* Color de texto en naranja oscuro */
+    color: darkgreen; /* Color de texto en naranja oscuro */
   }
   
   ion-card input {
     background-color: transparent; /* Fondo transparente para navegadores que no usan variables CSS */
-    color: rgb(0, 0, 0); /* Color de texto en naranja oscuro */
+    color: darkgreen; /* Color de texto en naranja oscuro */
   }
 
 

@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
@@ -27,7 +31,12 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      initialNavigation: 'enabledBlocking'
+    })
   ],
   exports: [RouterModule]
 })
