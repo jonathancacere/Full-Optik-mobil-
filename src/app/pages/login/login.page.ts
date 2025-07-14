@@ -49,9 +49,9 @@ export class LoginPage   {
     return;
   }
 
-    // Verificar que la contraseña tenga máximo 4 caracteres
-    if ((this.password.length < 3) && (this.password.length > 8)) {
-      this.mostrarAlerta('La contraseña debe tener 3 y 8 caracteres.');
+    // Validar longitud de la contraseña
+    if (this.password.length < 3 || this.password.length > 8) {
+      this.mostrarAlerta('La contraseña debe tener entre 3 y 8 caracteres.');
       return;
     }
 

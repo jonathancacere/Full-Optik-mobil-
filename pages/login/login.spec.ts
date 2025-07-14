@@ -2,20 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { LoginPage } from './login.page';
 import { NavController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
-import { IonicModule } from '@ionic/angular';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FormtearFechaPipe } from '../../pipes/formtear-fecha.pipe';
-
-// Mock para FormtearFechaPipe
-const formtearFechaPipeMock = {
-  transform: jasmine.createSpy('transform').and.callFake((value: string) => {
-    const fecha = new Date(value);
-    const dia = String(fecha.getDate()).padStart(2, '0');
-    const mes = String(fecha.getMonth() + 1).padStart(2, '0');
-    const año = fecha.getFullYear();
-    return `${dia}/${mes}/${año}`;
-  })
-};
 
 // Mocks
 const navControllerMock = {
@@ -36,11 +23,7 @@ describe('LoginPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        // Importar el módulo de Ionic
-        IonicModule
-      ],
+      imports: [RouterTestingModule],
       declarations: [LoginPage],
       providers: [
         { provide: NavController, useValue: navControllerMock },
@@ -61,20 +44,27 @@ describe('LoginPage', () => {
 
   describe('Email Validation', () => {
     it('should validate valid email formats', () => {
+      // Test various valid email formats
       expect(component.validarEmail('test@example.com')).toBeTrue();
       expect(component.validarEmail('user@domain.com')).toBeTrue();
       expect(component.validarEmail('name.lastname@company.org')).toBeTrue();
+      expect(component.validarEmail('first.last@subdomain.company.com')).toBeTrue();
     });
 
     it('should invalidate invalid email formats', () => {
+      // Test various invalid email formats
       expect(component.validarEmail('invalid-email')).toBeFalse();
       expect(component.validarEmail('test@')).toBeFalse();
       expect(component.validarEmail('@example.com')).toBeFalse();
+      expect(component.validarEmail('test@example')).toBeFalse();
+      expect(component.validarEmail('test@.com')).toBeFalse();
+      expect(component.validarEmail('test@example.com.' + 'com')).toBeFalse();
     });
   });
 
   describe('Login Functionality', () => {
     beforeEach(() => {
+      // Reset mocks before each test
       alertControllerMock.create.calls.reset();
       navControllerMock.navigateForward.calls.reset();
     });
@@ -120,7 +110,7 @@ describe('LoginPage', () => {
       
       const alert = alertControllerMock.create.calls.mostRecent().args[0];
       expect(alert.header).toBe('Error');
-      expect(alert.message).toBe('La contraseña debe tener entre 3 y 8 caracteres.');
+      expect(alert.message).toBe('La contraseña debe tener 3 y 8 caracteres.');
       expect(alert.buttons).toEqual(['OK']);
 
       // Reset mocks
@@ -133,7 +123,7 @@ describe('LoginPage', () => {
       
       const alert2 = alertControllerMock.create.calls.mostRecent().args[0];
       expect(alert2.header).toBe('Error');
-      expect(alert2.message).toBe('La contraseña debe tener entre 3 y 8 caracteres.');
+      expect(alert2.message).toBe('La contraseña debe tener 3 y 8 caracteres.');
       expect(alert2.buttons).toEqual(['OK']);
     });
 
